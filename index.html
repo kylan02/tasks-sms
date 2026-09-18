@@ -43,6 +43,15 @@
   figcaption { color: var(--muted); font-size: 13px; margin-top: 8px; }
   .toc { color: var(--muted); font-size: 14px; margin: 16px 0 0; }
   .toc a { margin-right: 14px; white-space: nowrap; }
+  table.campaign { border-collapse: collapse; width: 100%; margin: 16px 0 4px; font-size: 14.5px; }
+  table.campaign th, table.campaign td {
+    text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line);
+  }
+  table.campaign th { width: 34%; font-weight: 600; color: var(--muted); white-space: nowrap; }
+  @media (max-width: 520px) {
+    table.campaign th, table.campaign td { display: block; width: auto; border-bottom: 0; padding: 4px 0; }
+    table.campaign td { padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  }
 </style>
 </head>
 <body>
@@ -73,6 +82,18 @@
     Nothing is sent to a phone number until that number has texted the keyword below.
     Consent is given from the handset itself, and can be withdrawn the same way.
   </p>
+
+  <table class="campaign">
+    <tr><th>Opt-in method</th><td>Keyword text message. No web form, paper form or verbal opt-in.</td></tr>
+    <tr><th>Keyword</th><td><strong>SUBSCRIBE</strong> (also START, UNSTOP, YES)</td></tr>
+    <tr><th>Number to text</th><td><strong>(855) 554-4699</strong> (toll-free, long code)</td></tr>
+    <tr><th>Confirmation</th><td>Texting the keyword is itself the confirmation of consent. The welcome message below is sent in reply. No message is sent to a number that has not texted the keyword first.</td></tr>
+    <tr><th>Message frequency</th><td>Varies, entirely user-driven: one short confirmation per task the user texts in, plus reminders at times the user schedules. Typically 0–10 per day. Never promotional.</td></tr>
+    <tr><th>Disclaimers</th><td>Msg frequency varies. Msg&amp;data rates may apply.</td></tr>
+    <tr><th>Help</th><td>Reply <strong>HELP</strong> or <strong>INFO</strong>, subscribed or not.</td></tr>
+    <tr><th>Opt out</th><td>Reply <strong>STOP</strong> at any time. Consent and the account link are both deleted; nothing further is sent.</td></tr>
+    <tr><th>Terms &amp; privacy</th><td><a href="#terms">Terms of service</a> · <a href="#privacy">Privacy policy</a></td></tr>
+  </table>
 
   <h3>1. Text the keyword</h3>
   <p>
