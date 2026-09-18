@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tasks — SMS opt-in, terms and privacy</title>
+<meta name="description" content="How the Tasks app's SMS messaging works: opt-in, message types, HELP and STOP, terms and privacy policy.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --line: #e5e5ea;
+    --accent: #0a60c2; --code-bg: #f5f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16161a; --fg: #ececf1; --muted: #a0a0a8; --line: #2c2c32;
+            --accent: #6db3ff; --code-bg: #1e1e24; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 96px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.02em; }
+  h2 { font-size: 20px; margin: 44px 0 10px; letter-spacing: -0.01em; }
+  h3 { font-size: 15px; margin: 24px 0 6px; }
+  p, li { color: var(--fg); }
+  .lede { color: var(--muted); font-size: 17px; margin: 0 0 8px; }
+  .updated { color: var(--muted); font-size: 13px; margin: 0 0 8px; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0 0; }
+  ol, ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  code, .msg {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13.5px;
+    background: var(--code-bg); border-radius: 5px;
+  }
+  code { padding: 1px 5px; }
+  .msg { display: block; padding: 8px 10px; margin: 6px 0; white-space: pre-wrap; }
+  figure { margin: 16px 0; }
+  figure img {
+    max-width: 320px; width: 100%; border: 1px solid var(--line); border-radius: 10px; display: block;
+  }
+  figcaption { color: var(--muted); font-size: 13px; margin-top: 8px; }
+  .toc { color: var(--muted); font-size: 14px; margin: 16px 0 0; }
+  .toc a { margin-right: 14px; white-space: nowrap; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Tasks</h1>
+  <p class="lede">A personal task list for one person, with a text-message front door.</p>
+  <p class="updated">Last updated 18 September 2026</p>
+  <p class="toc">
+    <a href="#opt-in">SMS opt-in</a>
+    <a href="#messages">Messages</a>
+    <a href="#terms">Terms</a>
+    <a href="#privacy">Privacy</a>
+  </p>
+
+  <p>
+    Tasks is a small desktop app. Its list lives in the owner's own account, and the
+    same account can be reached by text message: you text a task to the number and it
+    is added to your list, and you can ask to be reminded about something at a time
+    you choose. Messages only ever go to the phone number of the person who owns the
+    account, and only because that person asked for them.
+  </p>
+
+  <hr>
+
+  <h2 id="opt-in">How you opt in to SMS</h2>
+  <p>
+    Consent is given inside the app, by the person who owns the account, and confirmed
+    from their own handset. There is no shared keyword and no sign-up form: each
+    account gets its own one-time code.
+  </p>
+
+  <ol>
+    <li>Open the Tasks app and go to <strong>Settings</strong>.</li>
+    <li>Press <strong>link</strong>. The app shows a <strong>one-time 6-digit code</strong>
+        and the number to send it to. The code belongs to that account alone and
+        expires after 10 minutes.</li>
+    <li>From the phone you want to link, text that code to
+        <strong>(855) 554-4699</strong>.</li>
+    <li>You receive a confirmation, and that phone is linked. Nothing is sent to a
+        number that has not completed this step.</li>
+  </ol>
+
+  <h3>Confirmation you receive</h3>
+  <span class="msg">Linked! Text me anything you need to get done and I'll add it. Reply STOP to unlink.</span>
+
+  <h3>Opting out</h3>
+  <p>
+    Text <strong>STOP</strong> (or <strong>UNLINK</strong>) at any time. The link is
+    deleted immediately, no further messages are sent, and you receive:
+  </p>
+  <span class="msg">Unlinked. Text a new code from the app any time to link again.</span>
+
+  <h3>Getting help</h3>
+  <p>Text <strong>HELP</strong>, or anything at all from an unlinked number, and you receive:</p>
+  <span class="msg">This number belongs to Tasks. To link your phone: open the app, Settings, Link phone, and text me the 6-digit code.</span>
+
+  <hr>
+
+  <h2 id="messages">What gets sent, and how often</h2>
+  <p>
+    Every message is either a direct reply to something you texted, or a reminder you
+    asked for at a time you chose. Nothing is promotional, and nothing is sent on
+    anyone else's behalf. A typical day is between zero and ten messages.
+  </p>
+  <p>Real examples:</p>
+  <span class="msg">Added 'Email the client' to Personal.</span>
+  <span class="msg">Reminder: call the dentist</span>
+  <p class="updated">Message and data rates may apply.</p>
+
+  <hr>
+
+  <h2 id="terms">Terms of service</h2>
+  <p>
+    Tasks is provided free, as-is, for personal use, with no warranty of any kind and
+    no guarantee of availability. It is a personal project, not a commercial service.
+  </p>
+  <ul>
+    <li>You may use it only for your own task list, from a phone number you control.</li>
+    <li>Messages are delivered over the public phone network and through third parties
+        (Twilio, Google Cloud). Delivery and timing cannot be guaranteed, so do not
+        rely on a reminder for anything safety-critical.</li>
+    <li>Reminders are sent on a best-effort basis; a failed message is retried a few
+        times and then dropped.</li>
+    <li>You can end the service at any time by texting STOP, which deletes the link
+        between your phone number and the account.</li>
+    <li>These terms may change; the date at the top of this page shows when it was
+        last revised.</li>
+  </ul>
+
+  <hr>
+
+  <h2 id="privacy">Privacy policy</h2>
+
+  <h3>What is collected</h3>
+  <ul>
+    <li><strong>Your phone number</strong>, once you complete the opt-in above, so
+        replies and reminders can reach you.</li>
+    <li><strong>The text of messages you send</strong> to the number, and the tasks
+        and reminders created from them.</li>
+    <li><strong>Your account identifier</strong> from signing in to the app with
+        Google, and your email address as part of that sign-in.</li>
+    <li>A short, rolling record of recent messages on the number, so a follow-up like
+        "put that one in Personal instead" makes sense in context.</li>
+  </ul>
+
+  <h3>How it is used</h3>
+  <p>
+    Only to run the service: to work out what you asked for, to keep your task list,
+    and to send the replies and reminders you asked for. The text of your messages is
+    sent to Google's Gemini API to be turned into tasks. Nothing is sold, and nothing
+    is used for advertising or shared with anyone beyond the providers needed to
+    deliver it — Twilio for messaging, Google Cloud and Firebase for storage and
+    processing.
+  </p>
+
+  <h3>Where it is kept, and for how long</h3>
+  <p>
+    In Google Firebase, under the account it belongs to. Tasks and their history are
+    kept until you delete them. The link between your phone number and your account is
+    kept until you text STOP, which deletes it immediately.
+  </p>
+
+  <h3>Your choices</h3>
+  <ul>
+    <li>Text <strong>STOP</strong> to unlink your number and stop all messages.</li>
+    <li>Delete tasks in the app at any time.</li>
+    <li>Ask for your data to be deleted, or ask what is held, using the contact below.</li>
+  </ul>
+
+  <h3>Contact</h3>
+  <p>__CONTACT__</p>
+
+</main>
+</body>
+</html>
