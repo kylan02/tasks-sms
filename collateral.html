@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tasks — SMS campaign collateral</title>
+<!--
+  Rendered to opt-in-collateral.png with headless Chrome and filed as the opt-in
+  policy proof. Every quoted message here is checked against sms-copy.ts by
+  functions/src/sms-copy.test.ts, so the picture cannot drift from what the
+  number actually sends.
+
+  Deliberately light-only and fixed width: it is a screenshot, not a web page.
+-->
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; width: 1000px; background: #ffffff; color: #17181c;
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .sheet { padding: 40px 44px 44px; }
+  header { border-bottom: 2px solid #17181c; padding-bottom: 14px; margin-bottom: 22px; }
+  h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .sub { color: #5f6368; font-size: 14px; }
+  .hero {
+    background: #f2f6ff; border: 1px solid #cddcff; border-radius: 10px;
+    padding: 18px 20px; margin-bottom: 22px;
+  }
+  .hero .big { font-size: 22px; font-weight: 700; letter-spacing: -0.01em; }
+  .hero .big em { font-style: normal; background: #ffe8a3; padding: 0 6px; border-radius: 4px; }
+  .hero .note { color: #45484f; font-size: 13.5px; margin-top: 6px; }
+  h2 {
+    font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+    color: #5f6368; margin: 22px 0 8px;
+  }
+  .msg {
+    display: block; background: #f5f5f7; border-left: 3px solid #9aa0a6;
+    border-radius: 0 6px 6px 0; padding: 9px 12px; margin: 6px 0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; line-height: 1.5;
+    white-space: pre-wrap;
+  }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; vertical-align: top; padding: 7px 10px; border-bottom: 1px solid #e6e6ea; font-size: 14px; }
+  th { width: 26%; color: #5f6368; font-weight: 600; white-space: nowrap; }
+  .cols { display: flex; gap: 26px; }
+  .cols > div { flex: 1; }
+  footer { margin-top: 26px; padding-top: 14px; border-top: 1px solid #e6e6ea; color: #5f6368; font-size: 13px; }
+  a { color: #0a60c2; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header>
+    <h1>Tasks — SMS opt-in</h1>
+    <div class="sub">Campaign collateral for toll-free verification · (855) 554-4699 · 18 September 2026</div>
+  </header>
+
+  <div class="hero">
+    <div class="big">Text <em>SUBSCRIBE</em> to <em>(855) 554-4699</em></div>
+    <div class="note">
+      Texting the keyword is the confirmation of consent. Nothing is sent to any number
+      that has not texted it first. START, UNSTOP and YES are accepted too.
+    </div>
+  </div>
+
+  <h2>What this number is</h2>
+  <p style="margin:0">
+    Tasks is a personal task-list app. After opting in, you text things you need to do to
+    this number and they are added to your own list, and you receive reminders at times
+    you schedule yourself. Messages only ever go to the person who owns the account.
+  </p>
+
+  <h2>Welcome message, sent the moment you opt in</h2>
+  <span class="msg">Tasks: you're subscribed. Text me things to do and I'll add them to your list, and I'll text you reminders you schedule. Msg frequency varies. Msg&amp;data rates may apply. Reply HELP for help, STOP to cancel. Terms &amp; privacy: https://kylan02.github.io/tasks-sms/ To link your account: open the Tasks app, Settings, link, and text me the 6-digit code it shows.</span>
+
+  <h2>Confirmation once your account is linked</h2>
+  <span class="msg">Linked! Text me anything you need to get done and I'll add it. Reply STOP to unsubscribe.</span>
+
+  <div class="cols">
+    <div>
+      <h2>Reply HELP or INFO, any time</h2>
+      <span class="msg">Tasks: text things to do to this number and they go on your list; reminders you schedule are texted back. Msg&amp;data rates may apply. Reply STOP to cancel. https://kylan02.github.io/tasks-sms/</span>
+    </div>
+    <div>
+      <h2>Reply STOP, any time</h2>
+      <span class="msg">Tasks: you're unsubscribed and your number is unlinked. No more messages will be sent. Text SUBSCRIBE to start again.</span>
+    </div>
+  </div>
+
+  <h2>Before opt-in, the only possible reply</h2>
+  <span class="msg">Tasks: text SUBSCRIBE to this number to start. Reply HELP for more.</span>
+
+  <h2>Campaign details</h2>
+  <table>
+    <tr><th>Opt-in method</th><td>Keyword text message. No web form, paper form or verbal opt-in.</td></tr>
+    <tr><th>Keyword</th><td>SUBSCRIBE (also START, UNSTOP, YES)</td></tr>
+    <tr><th>Number</th><td>(855) 554-4699 — toll-free long code</td></tr>
+    <tr><th>Message frequency</th><td>Varies, entirely user-driven: one short confirmation per task texted in, plus reminders the user schedules. Typically 0–10 per day. Never promotional.</td></tr>
+    <tr><th>Disclaimers</th><td>Msg frequency varies. Msg&amp;data rates may apply.</td></tr>
+    <tr><th>Opt out</th><td>STOP (also STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, UNLINK) — deletes consent and the account link immediately.</td></tr>
+    <tr><th>Terms</th><td>https://kylan02.github.io/tasks-sms/#terms</td></tr>
+    <tr><th>Privacy policy</th><td>https://kylan02.github.io/tasks-sms/#privacy</td></tr>
+  </table>
+
+  <footer>
+    Full opt-in documentation: https://kylan02.github.io/tasks-sms/#opt-in
+  </footer>
+
+</div>
+</body>
+</html>
