@@ -79,15 +79,15 @@
 
   <h2 id="opt-in">How you opt in to SMS</h2>
   <p>
-    Nothing is sent to a phone number until that number has texted the keyword below.
-    Consent is given from the handset itself, and can be withdrawn the same way.
+    Enrollment starts from your handset with SUBSCRIBE and is confirmed only when you reply Y.
+    HELP and STOP work at any time. Other texts before enrollment receive instructions to subscribe.
   </p>
 
   <table class="campaign">
     <tr><th>Opt-in method</th><td>Keyword text message. No web form, paper form or verbal opt-in.</td></tr>
     <tr><th>Keyword</th><td><strong>SUBSCRIBE</strong> (also START, UNSTOP, YES)</td></tr>
     <tr><th>Number to text</th><td><strong>(906) 767-6773</strong> (local, 10-digit long code)</td></tr>
-    <tr><th>Confirmation</th><td>Texting the keyword is itself the confirmation of consent. The welcome message below is sent in reply. No message is sent to a number that has not texted the keyword first.</td></tr>
+    <tr><th>Confirmation</th><td>Texting SUBSCRIBE requests enrollment and returns disclosures. Reply Y within 24 hours to confirm. Only after Y is received does the subscription become active and an enrollment confirmation is sent.</td></tr>
     <tr><th>Message frequency</th><td>Varies, entirely user-driven: one short confirmation per task the user texts in, plus reminders at times the user schedules. Typically 0–10 per day. Never promotional.</td></tr>
     <tr><th>Disclaimers</th><td>Msg frequency varies. Msg&amp;data rates may apply.</td></tr>
     <tr><th>Help</th><td>Reply <strong>HELP</strong> or <strong>INFO</strong>, subscribed or not.</td></tr>
@@ -106,8 +106,10 @@
     (<strong>START</strong>, <strong>UNSTOP</strong> and <strong>YES</strong> also work.)
   </p>
 
-  <h3>2. You receive the welcome message</h3>
-  <span class="msg">KoopTasks: you're subscribed. Text me things to do and I'll add them to your list, and I'll text you reminders you schedule. Msg frequency varies. Msg&amp;data rates may apply. Reply HELP for help, STOP to cancel. Terms &amp; privacy: https://kylan02.github.io/tasks-sms/ To link your account: open the KoopTasks app, Settings, link, and text me the 6-digit code it shows.</span>
+  <h3>2. Read the disclosures and reply Y</h3>
+  <span class="msg">KoopTasks: Task replies and reminders you request. Msg frequency varies. Msg&amp;data rates may apply. Reply HELP for help, STOP to cancel. Terms &amp; privacy: https://kylan02.github.io/tasks-sms/ Reply Y to confirm enrollment (within 24 hours).</span>
+  <p>Reply <strong>Y</strong> within 24 hours to confirm enrollment. Only then are you subscribed and sent this confirmation:</p>
+  <span class="msg">KoopTasks: You're subscribed to task replies and reminders you request. Msg frequency varies. Msg&amp;data rates may apply. HELP for help; STOP to cancel. Terms &amp; privacy: https://kylan02.github.io/tasks-sms/ Text your 6-digit code from app Settings to link.</span>
 
   <h3>3. Link the number to your account</h3>
   <p>
@@ -117,7 +119,7 @@
   </p>
   <span class="msg">Linked! Text me anything you need to get done and I'll add it. Reply STOP to unsubscribe.</span>
   <p>
-    Until a number has texted the keyword, the only thing it can receive is this:
+    Before enrollment, other texts receive these instructions (HELP and STOP have their own replies):
   </p>
   <span class="msg">KoopTasks: text SUBSCRIBE to this number to start. Reply HELP for more.</span>
 
@@ -149,7 +151,9 @@
 
   <hr>
 
-  <h2 id="terms">Terms of service</h2>
+  <h2 id="terms">Terms of Service</h2>
+  <h3>SMS Terms</h3>
+  <p>KoopTasks sends task replies and reminders you request. Message frequency varies. Message and data rates may apply. <strong>Reply HELP for help</strong> or contact aortas.diesels_1z@icloud.com. <strong>Reply STOP to cancel</strong>. See our <a href="#privacy">Privacy Policy</a>. Carriers are not liable for delayed or undelivered messages.</p>
   <p>
     KoopTasks is provided free, as-is, for personal use, with no warranty of any kind and
     no guarantee of availability. It is a personal project, not a commercial service.
@@ -169,7 +173,8 @@
 
   <hr>
 
-  <h2 id="privacy">Privacy policy</h2>
+  <h2 id="privacy">Privacy Policy</h2>
+  <p>KoopTasks does not sell or share your SMS opt-in data or personal information with third parties for marketing purposes.</p>
 
   <h3>What is collected</h3>
   <ul>
